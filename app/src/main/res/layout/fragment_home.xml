@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/buttonCompanyLoginHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="24dp"
+        android:text="Company Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCompanyRegisterHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Company Register"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCompanyLoginHome"
+        app:layout_constraintStart_toStartOf="@+id/buttonCompanyLoginHome"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCompanyLoginHome" />
+
+    <Button
+        android:id="@+id/buttonCustomerLoginHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Customer Login"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCompanyRegisterHome"
+        app:layout_constraintStart_toStartOf="@+id/buttonCompanyRegisterHome"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCompanyRegisterHome" />
+
+    <Button
+        android:id="@+id/buttonCustomerRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Customer Register"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCustomerLoginHome"
+        app:layout_constraintStart_toStartOf="@+id/buttonCustomerLoginHome"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCustomerLoginHome" />
+</androidx.constraintlayout.widget.ConstraintLayout>

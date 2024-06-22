@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyMenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/buttonGoBackDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="@+id/editTextUpdateMenuIngredients"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateMenuIngredients" />
+
+    <Button
+        android:id="@+id/buttonSubmitMenuItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUpdateMenuIngredients"
+        app:layout_constraintTop_toTopOf="@+id/buttonGoBackDashboard" />
+
+    <EditText
+        android:id="@+id/editTextUpdateMenuItem"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Menu Item Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdate" />
+
+    <EditText
+        android:id="@+id/editTextUpdateMenuIngredients"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingredient List"
+        android:inputType="text|textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUpdateMenuItem"
+        app:layout_constraintStart_toStartOf="@+id/editTextUpdateMenuItem"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateMenuItem" />
+
+    <EditText
+        android:id="@+id/editTextUpdatingMenuPrice"
+        android:layout_width="392dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUpdateMenuIngredients"
+        app:layout_constraintStart_toStartOf="@+id/editTextUpdateMenuIngredients"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateMenuIngredients" />
+
+    <TextView
+        android:id="@+id/textViewUpdate"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Updating: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
